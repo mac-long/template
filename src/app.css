@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply bg-gray-100 text-gray-900 flex flex-col min-h-screen;
+  }
+
+  a {
+    @apply text-indigo-600 hover:text-indigo-700;
+  }
+
+  header {
+    @apply bg-white shadow flex items-center justify-between p-4;
+
+    h1 {
+      @apply text-3xl font-bold;
+    }
+
+    nav {
+      @apply flex items-center space-x-4;
+    }
+
+    a {
+      @apply text-gray-900;
+    }
+  }
+
+  main {
+    @apply flex-1;
+  }
+
+  button,
+  .button {
+    @apply rounded-md shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50;
+
+    &.primary {
+      @apply text-white bg-indigo-600 hover:bg-indigo-700;
+    }
+
+    &.link {
+      @apply text-indigo-600 hover:text-indigo-700;
+    }
+  }
+
+  footer {
+    @apply bg-white shadow flex items-center justify-center p-4;
+
+    p {
+      @apply text-sm;
+    }
+  }
+}
+
+@layer components {
+  .hero {
+    @apply flex flex-col items-center space-y-8 py-16 text-center;
+
+    h1 {
+      @apply text-6xl font-bold;
+    }
+
+    p {
+      @apply max-w-md;
+    }
+  }
+
+  .buttons {
+    @apply flex space-x-4;
+  }
+
+  .container {
+    @apply mx-auto px-4;
+  }
+}
