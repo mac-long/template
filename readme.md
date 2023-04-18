@@ -2,9 +2,8 @@
 
 ## Tools Used
 
+- SvelteKit
 - TailwindCSS
-- ESLint
-- Prettier
 - SQLite3
 
 ## Routes
