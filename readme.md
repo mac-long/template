@@ -4,7 +4,6 @@
 
 - SvelteKit
 - TailwindCSS
-- SQLite3
 
 ## Routes
 
