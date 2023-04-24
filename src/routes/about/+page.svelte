@@ -25,13 +25,11 @@
     file before starting work on the new application so that you can begin with a fresh database.
   </p>
   <ul>
-  {#if users > 0}
     {#each users as user}
       <li class="flex items-center space-x-2">
         <h3 class="m-0">{user.name}</h3>
         <span>{user.bio}</span>
       </li>
     {/each}
-  {/if}
   </ul>
 </div>
